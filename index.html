@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayan - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(178, 164, 255) ;
+            color: rgb(1, 1, 1);
+            font-family: 'Fira Mono', sans-serif;
+            height: 762px;
+        }
+
+        nav {
+            display: flex ;
+            align-items: center;
+            justify-content: space-around;
+            height: 100px;
+            background-color: rgb(255, 180, 180);
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+             
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+            font-size: 2rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+
+        nav ul li a:hover {
+            color: rgb(255, 222, 180);
+            font-size: 2.1rem;
+        }
+
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 150px 0px 0px -15px;
+
+        }
+
+        .left {
+            margin: 0 70px;
+        }
+
+        .firstsection>div {
+            width: 100%;
+
+        }
+
+        .leftsection {
+            margin-left: 850px;
+            justify-content: left;
+            font-size: 2.5rem;
+        }
+
+
+
+        .blue {
+            color: rgb(255, 255, 255);
+        }
+
+        #element {
+            color: rgb(255, 255, 255);
+        }
+
+        .left img {
+            margin: 600px 0px 10px 100px;
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .lefttext{
+            margin-left: 110px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <img src="profile.jpg" alt="">
+                <div class="lefttext">Ayan's Portfolio</div>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Skills.html">Skills</a></li>
+                    <li><a href="Socials.html">Socials</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="blue">Ayan</span>
+                <div>I am a/an</div>
+                <span id="element"></span>
+            </div>
+
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Developer', 'Artist', 'Gamer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
